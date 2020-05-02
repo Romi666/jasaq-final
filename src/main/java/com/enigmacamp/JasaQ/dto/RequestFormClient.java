@@ -15,10 +15,6 @@ public class RequestFormClient {
 	@NotEmpty(message = "sender may not empty")
 	private String sender;
 	
-	public RequestFormClient() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public RequestFormClient(@NotEmpty(message = "booking date may not empty") String bookingDate,
 			@NotEmpty(message = "description may not empty") String description,
 			@NotEmpty(message = "receiver may not empty") String receiver,

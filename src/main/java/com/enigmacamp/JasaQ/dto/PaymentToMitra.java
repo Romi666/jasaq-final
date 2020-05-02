@@ -9,10 +9,6 @@ public class PaymentToMitra {
 	@NotEmpty(message = "may not empty")
 	private String usernameMitra;
 	
-	public PaymentToMitra() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public PaymentToMitra(@NotEmpty(message = "may not empty") String usernameClient,
 			@NotEmpty(message = "may not empty") String usernameMitra) {
 		super();

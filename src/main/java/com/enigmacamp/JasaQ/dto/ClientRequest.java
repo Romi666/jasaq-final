@@ -32,9 +32,6 @@ public class ClientRequest {
 	@NotEmpty(message = "Alamat tidak boleh kosong")
 	private String alamat;
 	
-	public ClientRequest() {
-		// TODO Auto-generated constructor stub
-	}
 	public ClientRequest(
 			@NotEmpty(message = "Nama tidak boleh kosong") @Size(min = 3, message = "minimal mengandung 4 karakter") String name,
 			@NotEmpty(message = "username tidak boleh kosong") @Size(min = 5, message = "Minimal mengandung 6 karakter") String username,

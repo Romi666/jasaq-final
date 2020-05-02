@@ -6,9 +6,6 @@ public class TypeServicesRequest {
 	@NotEmpty(message = "Masukan type services")
 	public String type;
 	
-	public TypeServicesRequest() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public TypeServicesRequest(String type) {
 		super();

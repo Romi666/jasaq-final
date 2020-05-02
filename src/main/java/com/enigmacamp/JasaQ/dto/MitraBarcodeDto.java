@@ -11,9 +11,6 @@ public class MitraBarcodeDto {
 	@NotNull(message = "May not null")
 	private Double priceServices;
 	
-	public MitraBarcodeDto() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public MitraBarcodeDto(@NotEmpty(message = "May not empty") String username,
 			@NotNull(message = "May not null") Double priceServices) {

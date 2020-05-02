@@ -10,10 +10,6 @@ public class AccountAddBalance {
 	
 	@NotNull(message = "Ammount mau not null")
 	private Double ammount;
-	
-	public AccountAddBalance() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public AccountAddBalance(@NotEmpty(message = "name may not empty") String username,
 			@NotNull(message = "Ammount mau not null") Double ammount) {
