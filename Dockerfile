@@ -1,3 +1,5 @@
-FROM openjdk:8-jre
-COPY target/JasaQ-0.0.1.RELEASE.jar app.jar
+From openjdk:11
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
+RUN echo "/" < /etc/timezone

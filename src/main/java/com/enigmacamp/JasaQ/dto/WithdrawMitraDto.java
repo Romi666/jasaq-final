@@ -15,7 +15,11 @@ public class WithdrawMitraDto {
 	
 	@NotNull(message = "ammount may not be null")
 	private Double ammount;
-
+	
+	public WithdrawMitraDto() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public WithdrawMitraDto(@NotEmpty(message = "username may not empty") String username,
 			@NotEmpty(message = "no rekening may not empty") @Size(min = 5, message = "minimal mengandung 5 angka") String noRekening,
 			@NotNull(message = "ammount may not be null") Double ammount) {

@@ -92,4 +92,10 @@ public class TransactionController {
 		return services.getById(id);
 	}
 	
+	@ApiOperation(value = "Get all id")
+	@GetMapping("/getAllId")
+	public List<Long> getAllId() {
+		return services.getAllId();
+	}
+	
 }

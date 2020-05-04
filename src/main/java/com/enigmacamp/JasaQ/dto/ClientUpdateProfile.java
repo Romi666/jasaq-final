@@ -27,7 +27,10 @@ public class ClientUpdateProfile {
 	
 	private String alamat;
 
-
+	public ClientUpdateProfile() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public ClientUpdateProfile(
 			@NotEmpty(message = "nama tidak boleh kosong") @Size(min = 3, message = "minimal 3 karakter") String name,
 			@NotEmpty(message = "username tidak boleh kosong") @Size(min = 5, message = "minimal 6 karakter") String username,

@@ -40,7 +40,11 @@ public class MitraRequest {
 	@NotNull(message = "price services tidak boleh kosong")
 	@Min(10000)
 	private Double priceServices;
-
+	
+	public MitraRequest() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public MitraRequest(
 			@NotEmpty(message = "nama tidak boleh kosong") @Size(min = 3, message = "minimal mengandung 4 karakter") String name,
 			@NotEmpty(message = "username tidak boleh kosong") @Size(min = 5, message = "minimal mengandung 6 karakter") String username,

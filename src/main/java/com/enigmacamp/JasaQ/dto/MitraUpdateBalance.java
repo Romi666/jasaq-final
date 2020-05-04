@@ -9,7 +9,11 @@ public class MitraUpdateBalance {
 	
 	@NotNull(message = "Balance may not null")
 	private Double ammount;
-
+	
+	public MitraUpdateBalance() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public MitraUpdateBalance(@NotEmpty(message = "Username may not empty") String username,
 			@NotNull(message = "Balance may not null") Double ammount) {
 		super();

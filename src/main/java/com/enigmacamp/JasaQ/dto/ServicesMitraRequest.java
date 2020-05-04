@@ -13,7 +13,9 @@ public class ServicesMitraRequest {
 	@NotEmpty(message = "Type tidak boleh kosong")
 	private String type;
 
-	
+	public ServicesMitraRequest() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public ServicesMitraRequest(@NotEmpty(message = "services name may not be empty") String servicesName,
 			@NotEmpty(message = "logo may not be empty") String logo,

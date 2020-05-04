@@ -10,13 +10,18 @@ public class MitraLogin {
 	@NotEmpty(message = "password tidak boleh kosong")
 	public String password;
 	
+	public MitraLogin() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public MitraLogin(@NotEmpty(message = "username tidak boleh kosong") String username,
 			@NotEmpty(message = "password tidak boleh kosong") String password) {
 		super();
 		this.username = username;
 		this.password = password;
 	}
-
+	
+	
 	public String getUsername() {
 		return username;
 	}

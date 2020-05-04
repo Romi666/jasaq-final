@@ -31,6 +31,10 @@ public class MitraUpdateProfile {
 	@Email
 	private String email;
 	
+	public MitraUpdateProfile() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public MitraUpdateProfile(
 			@NotEmpty(message = "nama tidak boleh kosong") @Size(min = 3, message = "minimal 4 karakter") String name,
 			@NotEmpty(message = "username tidak boleh kosong") @Size(min = 5, message = "minimal 6 karakter") String username,

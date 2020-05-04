@@ -107,6 +107,15 @@ public class TransactionServices {
 		return repo.findAll();
 	}
 	
+	public List<Long> getAllId() {
+		List<Transaction> listTf = repo.findAll();
+		List<Long> id = new ArrayList<Long>();
+		for (Transaction long1 : listTf) {
+			id.add(long1.getId());
+		}
+		return id;
+	}
+	
 	public List<Transaction> getListTransactionByMitra(@Valid String mitraUsername) {
 		MitraDto dtoMitra = mitraServ.getByUsername(mitraUsername);
 		Mitra mitra = mitraServ.convertMitra(dtoMitra);

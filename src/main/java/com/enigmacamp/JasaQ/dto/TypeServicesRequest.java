@@ -6,12 +6,14 @@ public class TypeServicesRequest {
 	@NotEmpty(message = "Masukan type services")
 	public String type;
 	
-
-	public TypeServicesRequest(String type) {
+	public TypeServicesRequest() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public TypeServicesRequest(@NotEmpty(message = "Masukan type services") String type) {
 		super();
 		this.type = type;
 	}
-	
 	public String getType() {
 		return type;
 	}

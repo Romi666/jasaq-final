@@ -10,6 +10,9 @@ public class ClientLoginDto {
 	@NotEmpty(message = "Password tidak boleh kosong")
 	private String password;
 	
+	public ClientLoginDto() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public ClientLoginDto(@NotEmpty(message = "Username tidak boleh kosong") String username,
 			@NotEmpty(message = "Password tidak boleh kosong") String password) {
